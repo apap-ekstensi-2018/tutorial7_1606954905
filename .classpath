@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Tutorial07Consumer/src/main/java"/>
+	<classpathentry kind="src" path="Tutorial07Consumer/src/test/java"/>
+	<classpathentry kind="src" path="Tutorial07Producer/src/main/java"/>
+	<classpathentry kind="src" path="Tutorial07Producer/src/test/java"/>
+	<classpathentry kind="lib" path="Tutorial07Consumer/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="Tutorial07Producer/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="output" path="Tutorial07Consumer/target/classes"/>
+</classpath>

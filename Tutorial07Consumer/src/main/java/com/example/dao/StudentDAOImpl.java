@@ -1,5 +1,6 @@
 package com.example.dao;
 
+import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,9 +27,9 @@ private RestTemplate restTemplate;
 @Override
 public List<StudentModel> selectAllStudents()
 {
-	ResponseEntity<StudentModel[]> listStudentEntity = restTemplate.getForEntity("http://localhost:8080/rest/student/viewall", StudentModel[].class);
+	StudentModel[] listStudentEntity = restTemplate.getForObject("http://localhost:8080/rest/student/viewall", StudentModel[].class);
 	 
-	return (List<StudentModel>) listStudentEntity;
+	return Arrays.asList(listStudentEntity);
 }
 
 }
